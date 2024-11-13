@@ -3,59 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>YourName - Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-
-    <!-- Header Section -->
-    <header class="header">
-        <div class="container">
-            <h1>Your Name</h1>
-            <p>Web Designer & Developer</p>
-            <nav>
-                <a href="#projects">Projects</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="project1.jpg" alt="Project 1">
-                    <h3>Project Title 1</h3>
-                    <p>A brief description of Project 1.</p>
+    <div class="min-h-screen bg-zinc-900 text-white">
+        <!-- Navigation -->
+        <nav class="flex items-center justify-between p-6 border-b border-zinc-800">
+            <a href="/" class="text-cyan-400 text-xl font-mono">{'</>'} YourName</a>
+            <div class="flex items-center gap-6">
+                <a href="#home" class="hover:text-cyan-400">Home</a>
+                <a href="#blogs" class="hover:text-cyan-400">Blogs</a>
+                <div class="flex items-center gap-4">
+                    <a href="https://instagram.com" class="hover:text-cyan-400">
+                        <i data-lucide="instagram"></i>
+                    </a>
+                    <a href="https://discord.com" class="hover:text-cyan-400">
+                        <i data-lucide="mail"></i>
+                    </a>
+                    <a href="https://github.com" class="hover:text-cyan-400">
+                        <i data-lucide="github"></i>
+                    </a>
                 </div>
-                <div class="project-card">
-                    <img src="project2.jpg" alt="Project 2">
-                    <h3>Project Title 2</h3>
-                    <p>A brief description of Project 2.</p>
-                </div>
-                <!-- Add more project cards as needed -->
             </div>
-        </div>
-    </section>
+        </nav>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Brief description about you, your skills, and your experience.</p>
-        </div>
-    </section>
+        <!-- Hero Section -->
+        <section id="home" class="container mx-auto px-6 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-6xl font-bold">Developer</h1>
+                        <div class="space-y-2">
+                            <p class="text-2xl">Hey</p>
+                            <p class="text-2xl">I'm <span class="text-cyan-400">YourName</span>,</p>
+                            <p class="text-2xl">Full-Stack Developer</p>
+                        </div>
+                    </div>
+                    <p class="text-zinc-400">
+                        I help businesses grow by crafting amazing web experiences. If you're
+                        looking for a developer that likes to get stuff done,
+                    </p>
+                    <button class="btn btn-outline">
+                        <i data-lucide="download" class="mr-2 h-4 w-4"></i> Download CV
+                    </button>
+                </div>
+                <div class="grid gap-4 md:grid-cols-2">
+                    <div class="card bg-zinc-800 p-4 text-center">
+                        <div class="text-4xl font-bold text-cyan-400">4</div>
+                        <div class="text-sm text-zinc-400">Programming Languages</div>
+                    </div>
+                    <div class="card bg-zinc-800 p-4 text-center">
+                        <div class="text-4xl font-bold text-cyan-400">6</div>
+                        <div class="text-sm text-zinc-400">Development Tools</div>
+                    </div>
+                    <div class="card bg-zinc-800 p-4 text-center">
+                        <div class="text-4xl font-bold text-cyan-400">8</div>
+                        <div class="text-sm text-zinc-400">Years of Experience</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        </div>
-    </section>
+        <!-- Skills Section -->
+        <section id="skills" class="container mx-auto px-6 py-20 border-t border-zinc-800">
+            <h2 class="text-4xl font-bold text-center mb-12">
+                <span class="text-cyan-400">{'</'}</span> Skills <span class="text-cyan-400">{'>'}</span>
+            </h2>
+            <div class="grid gap-8">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="card bg-zinc-800 p-6">
+                        <h3 class="text-xl font-bold mb-4">Web Development</h3>
+                        <p class="text-zinc-400">HTML, CSS, JS, REACT</p>
+                    </div>
+                    <div class="card bg-zinc-800 p-6">
+                        <h3 class="text-xl font-bold mb-4">App Development</h3>
+                        <p class="text-zinc-400">iOS, Android</p>
+                    </div>
+                </div>
+                <div class="flex justify-center gap-8">
+                    <div class="text-[#E44D26]">
+                        <div class="w-16 h-16 rounded-full bg-zinc-800 flex items-center justify-center">HTML</div>
+                    </div>
+                    <div class="text-[#264DE4]">
+                        <div class="w-16 h-16 rounded-full bg-zinc-800 flex items-center justify-center">CSS</div>
+                    </div>
+                    <div class="text-[#F7DF1E]">
+                        <div class="w-16 h-16 rounded-full bg-zinc-800 flex items-center justify-center">JS</div>
+                    </div>
+                    <div class="text-[#61DAFB]">
+                        <div class="w-16 h-16 rounded-full bg-zinc-800 flex items-center justify-center">React</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Works Section -->
+        <section id="works" class="container mx-auto px-6 py-20 border-t border-zinc-800">
+            <h2 class="text-4xl font-bold text-center mb-12">Works</h2>
+            <div class="relative">
+                <div class="flex items-center justify-center gap-8">
+                    <button class="btn btn-ghost" id="prevProject">
+                        <i data-lucide="chevron-left" class="h-8 w-8"></i>
+                    </button>
+                    <div class="relative">
+                        <img id="projectImage" src="/placeholder.svg?height=400&width=600" alt="Project" class="rounded-lg" width="600" height="400">
+                        <a id="projectLink" href="#" class="absolute bottom-4 right-4 bg-cyan-400 text-black px-4 py-2 rounded hover:bg-cyan-300">
+                            View Website
+                        </a>
+                    </div>
+                    <button class="btn btn-ghost" id="nextProject">
+                        <i data-lucide="chevron-right" class="h-8 w-8"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container mx-auto px-6 py-20 border-t border-zinc-800">
+            <h2 class="text-4xl font-bold text-center mb-12">Contact</h2>
+            <div class="max-w-md mx-auto">
+                <form class="space-y-6">
+                    <div class="space-y-2">
+                        <label for="name" class="text-sm">Your name *</label>
+                        <input id="name" class="input bg-zinc-800 border-zinc-700" required>
+                    </div>
+                    <div class="space-y-2">
+                        <label for="email" class="text-sm">Your email *</label>
+                        <input id="email" type="email" class="input bg-zinc-800 border-zinc-700" required>
+                    </div>
+                    <div class="space-y-2">
+                        <label for="message" class="text-sm">Your message *</label>
+                        <textarea id="message" class="textarea bg-zinc-800 border-zinc-700" required></textarea>
+                    </div>
+                    <button type="submit" class="btn w-full bg-cyan-400 text-black hover:bg-cyan-300">
+                        <i data-lucide="send" class="mr-2 h-4 w-4"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border-t border-zinc-800 py-6">
+            <div class="container mx-auto px-6">
+                <div class="flex justify-between items-center">
+                    <div class="text-sm text-zinc-400">
+                        © 2024 YourName. All rights reserved.
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="/privacy" class="text-sm text-zinc-400 hover:text-cyan-400">
+                            Privacy Policy
+                        </a>
+                        <a href="/terms" class="text-sm text-zinc-400 hover:text-cyan-400">
+                            Terms & Conditions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Projects data
+        const projects = [
+            {
+                title: "Project 1",
+                image: "/placeholder.svg?height=400&width=600",
+                link: "#"
+            },
+            {
+                title: "Project 2",
+                image: "/placeholder.svg?height=400&width=600",
+                link: "#"
+            }
+        ];
+
+        let currentProject = 0;
+
+        // Function to update project display
+        function updateProject() {
+            document.getElementById('projectImage').src = projects[currentProject].image;
+            document.getElementById('projectImage').alt = projects[currentProject].title;
+            document.getElementById('projectLink').href = projects[currentProject].link;
+        }
+
+        // Event listeners for project navigation
+        document.getElementById('prevProject').addEventListener('click', () => {
+            currentProject = (currentProject > 0) ? currentProject - 1 : projects.length - 1;
+            updateProject();
+        });
+
+        document.getElementById('nextProject').addEventListener('click', () => {
+            currentProject = (currentProject < projects.length - 1) ? currentProject + 1 : 0;
+            updateProject();
+        });
+
+        // Initialize project display
+        updateProject();
+    </script>
 </body>
 </html>
